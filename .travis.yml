@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-  - "5"
+  - "iojs"
+  - "7"
+before_script:
+  - npm install -g gulp
 script:
   - mocha tester.js
+  - gulp
 before_script:
   - npm install -g mocha
   - npm install
